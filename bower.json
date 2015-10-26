@@ -1,11 +1,12 @@
 {
   "name": "angular-indexedDB",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "homepage": "https://github.com/bramski/angular-indexedDB",
   "authors": [
-    "bramski <bramski@gmail.com>"
+    "bramski <bramski@gmail.com>",
+    "romski <rom@thechatters.com>"
   ],
-  "description": "An angularjs serviceprovider to utilize indexedDB with angular",
+  "description": "An angularjs service provider to utilize indexedDB with angular",
   "main": "angular-indexed-db.js",
   "keywords": [
     "angularjs",
