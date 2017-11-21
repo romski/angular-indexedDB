@@ -1,6 +1,6 @@
 {
   "name": "angular-indexed-db",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -45,7 +45,7 @@
   },
   "scripts": {
     "test": "grunt test",
-    "preinstall": "bower >/dev/null || npm install bower grunt-cli -g",
+    "preinstall": "bower --allow-root >/dev/null || npm install bower grunt-cli -g",
     "postinstall": "bower install --allow-root"
   }
 }
