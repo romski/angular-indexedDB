@@ -45,7 +45,7 @@
   },
   "scripts": {
     "test": "grunt test",
-    "preinstall": "bower >/dev/null || sudo npm install bower grunt-cli -g",
+    "preinstall": "bower >/dev/null || npm install bower grunt-cli -g",
     "postinstall": "bower install"
   }
 }
