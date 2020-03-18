@@ -108,6 +108,7 @@
         rejectWithError = function(deferred) {
           return function(error) {
             return $rootScope.$apply(function() {
+              console.error(`angular-indexed-db error`, error);
               return deferred.reject(errorMessageFor(error));
             });
           };
@@ -199,6 +200,7 @@
             this.transaction.onabort = (function(_this) {
               return function(error) {
                 return $rootScope.$apply(function() {
+                  console.error(`angular-indexed-db Transaction Aborted`, error);
                   return _this.defer.reject("Transaction Aborted", error);
                 });
               };
@@ -206,6 +208,7 @@
             this.transaction.onerror = (function(_this) {
               return function(error) {
                 return $rootScope.$apply(function() {
+                  console.error(`angular-indexed-db Transaction Error`, error);
                   return _this.defer.reject("Transaction Error", error);
                 });
               };
@@ -275,6 +278,7 @@
             return (function(_this) {
               return function(error) {
                 return $rootScope.$apply(function() {
+                  console.error(`angular-indexed-db error`, error);
                   return _this.q.reject(errorMessageFor(error));
                 });
               };
